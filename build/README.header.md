@@ -16,6 +16,12 @@ AFAIK WebStorm doesn't have any particular installation (or import) procedure fo
 Instead just drop `*.xml` files from this repository into WebStorm's folder where it stores LiveTemplates.
 Usually this is the `[your home directory]/.WebIde40/config/templates`.
 
+If you want prefer to clone this repository so that you can keep getting updates from the repo, clone the repository to your Webstorm LiveTemplates folder, then create a symlink to all the xml files from that LiveTemplates folder:
+
+```bash
+ln -s ./angularjs-webstorm-livetpls/*.xml ./
+```
+
 ##How to use the Live Templates
 The following show the available abbrivations and their default implementations. Variables that are editable upon template expansion are delemited with the $ sign (ex. `$filterName$`).
 `$END$` indicates where the cursor will be placed upon template completion.
